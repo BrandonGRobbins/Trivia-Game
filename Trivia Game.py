@@ -30,10 +30,9 @@ def next_block(the_file):
         correct=correct[0]
     explanation=next_line(the_file)
     return category, question, answers, correct, explanation
-the_file=open_file("test_file.txt","r")
-category, question, answers, correct, explanation = next_block(the_file)
-print(category)
-print(question)
-print(answers)
-print(correct)
-print(explanation)
+def welcome(title):
+    print("\t\tWelcome to Trivia Challenge!\n")
+    print("\t\t",title, "\n")
+
+def main():
+    the_file=open_file("test_question.txt","r")
